@@ -1,0 +1,27 @@
+ 1 Emty input
+print(StringsMostFrequentLength([]))
+-> "Input is emty"
+
+ 2. All strings same length
+print(StringsMostFrequentLength(["a", "b", "c"]))
+ -> ["a", "b", "c"]
+
+ 3. Multiple lengths, one length is most frequent
+print(StringsMostFrequentLength(["oo", "by", "cat", "dog", "ok"]))
+ -> length 2 appears 3 times
+ -> ["oo", "by", "ok"]
+
+ 4. Tie between lengths
+print(StringsMostFrequentLength(["a", "bb", "cc", "ddd", "eee"]))
+ length 2 and 3 appear twice each
+ max() will return the first max key
+ Possible output ➝ ["bb","cc"] 
+
+ 5. Mixed long/short
+print(StringsMostFrequentLength(["currys", "kd", "o", "canada"]))
+ -> length 6 appears twice
+ -> ["currys", "canada"]
+
+ 6. Single string
+print(StringsMostFrequentLength(["only"]))
+ -> ["only"]
